@@ -6,14 +6,13 @@ ls
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/Freescale" name="freescale"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://$USER@review.terranet.ab:29418/imx6/linux-imx" name="terranet_kernel"/>
-  <remote fetch="https://$USER@review.terranet.ab:29418/imx6/rtlwifi-next" name="terranet_wifi_driver"/>
+  <remote fetch="https://$USER@review.terranet.ab:29418/imx6" name="terranet"/>
 
   <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="rocko" name="meta-freescale" path="sources/meta-freescale"/>
 
-  <project remote="terranet_kernel" revision="master" name="terranet_linux-imx" path="sources/terranet_linux-imx"/>
-  <project remote="terranet_wifi_driver" revision="master" name="terranet_rtlwif-next" path="sources/terranet_rtlwifi-next"/>
+  <project remote="terranet" revision="master" name="linux-imx" path="sources/terranet_linux-imx"/>
+  <project remote="terranet" revision="master" name="rtlwif-next" path="sources/terranet_rtlwifi-next"/>
 
   <project remote="oe" revision="rocko" name="meta-openembedded" path="sources/meta-openembedded"/>
 
