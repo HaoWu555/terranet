@@ -7,7 +7,7 @@ ls
   <remote fetch="https://github.com/Freescale" name="freescale"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://review.terranet.ab/#/admin/projects/imx6/linux-imx" name="terranet_kernel"/>
-  <remot fetch="https://review.terranet.ab/#/admin/projects/imx6/rtlwifi-next" name="terranet_wifi_driver"/>
+  <remote fetch="https://review.terranet.ab/#/admin/projects/imx6/rtlwifi-next" name="terranet_wifi_driver"/>
 
   <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="rocko" name="meta-freescale" path="sources/meta-freescale"/>
