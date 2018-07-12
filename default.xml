@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="master"/>
+ls
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/Freescale" name="freescale"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://review.terranet.ab/#/admin/projects/imx6/linux-imx" name="terranet_kernel"/>
+  <remot fetch="https://review.terranet.ab/#/admin/projects/imx6/rtlwifi-next" name="terranet_wifi_driver"/>
+
+  <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="rocko" name="meta-freescale" path="sources/meta-freescale"/>
+
+  <project remote="terranet_kernel" revision="master" name="terranet_linux-imx" path="sources/terranet_linux-imx"/>
+  <project remote="terranet_wifi_driver" revision="master" name="terranet_rtlwif-next" path="sources/terranet_rtlwifi-next"/>
+
+  <project remote="oe" revision="rocko" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="freescale" revision="rocko" name="fsl-community-bsp-base" path="sources/base">
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="freescale" revision="rocko" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
+  <project remote="freescale" revision="rocko" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
+  <project remote="freescale" revision="rocko" name="Documentation" path="sources/Documentation"/>
+
+</manifest>
