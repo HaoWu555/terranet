@@ -6,8 +6,8 @@ ls
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/Freescale" name="freescale"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://$USER@review.terranet.ab:29418/imx6/linux-imx && scp -p -P 29418 $USER@review.terranet.ab:hooks/commit-msg linux-imx/.git/hooks/" name="terranet_kernel"/>
-  <remote fetch="https://$USER@review.terranet.ab:29418/imx6/rtlwifi-next && scp -p -P 29418 $USER@review.terranet.ab:hooks/commit-msg rtlwifi-next/.git/hooks/" name="terranet_wifi_driver"/>
+  <remote fetch="https://$USER@review.terranet.ab:29418/imx6/linux-imx" name="terranet_kernel"/>
+  <remote fetch="https://$USER@review.terranet.ab:29418/imx6/rtlwifi-next" name="terranet_wifi_driver"/>
 
   <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="rocko" name="meta-freescale" path="sources/meta-freescale"/>
