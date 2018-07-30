@@ -2,23 +2,19 @@
 <manifest>
 
   <default sync-j="4" revision="master"/>
-ls
+
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/Freescale" name="freescale"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://$USER@review.terranet.ab:29418/imx6" name="terranet"/>
 
   <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="rocko" name="meta-freescale" path="sources/meta-freescale"/>
 
-  <project remote="terranet" revision="master" name="linux-imx" path="sources/terranet_linux-imx"/>
-  <project remote="terranet" revision="master" name="rtlwif-next" path="sources/terranet_rtlwifi-next"/>
-
   <project remote="oe" revision="rocko" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <project remote="freescale" revision="rocko" name="fsl-community-bsp-base" path="sources/base">
-    <linkfile dest="README" src="README"/>
-    <linkfile dest="setup-environment" src="setup-environment"/>
+	<linkfile dest="README" src="README"/>
+	<linkfile dest="setup-environment" src="setup-environment"/>
   </project>
 
   <project remote="freescale" revision="rocko" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
