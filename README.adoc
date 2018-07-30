@@ -21,12 +21,13 @@ $: repo sync
 At the end of the commands you have every metadata you need to start work with.
 
 Download the TerraNet source:
-1. download the TerraNet layer: meta-terranet and put it in the sources/
-2. cd sources/ 
+1. download the TerraNet layer: meta-terranet and put it in the file sources
+2. cd sources
 3. mkdir terranet-support
 4. download the TerraNet kernel: linux-imx (master branch) in the sources/terranet-support
 5. download the rtlwifi-next in the sources/terranet-support
 
+Before bitbake, you need to source your enviroment to use python2.7 by "source venv/bin/activate" 
 
 To start a simple image build:
 
@@ -38,7 +39,8 @@ You can use any directory to host your build.
 
 Add the meta-terranet layer into build/conf/bblayer.com
 
-add "require conf/terranet.conf" in the local.conf
+Add "require conf/terranet.conf" in the build/conf/local.conf
 
-When modify the kernel in linux-imx, should put the correct SRCREV in the linux-terranet.inc in recipes-kernel file in meta-terranet or use the patch to combine your code.
+
+
 
